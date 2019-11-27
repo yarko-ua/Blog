@@ -50,7 +50,6 @@ section {
 }
 img {
     width: 370px;
-    min-width: 320px;
 }
 
 .image {
@@ -165,6 +164,15 @@ transition-duration: .9s;
 transition-timing-function: ease-in-out;
 }
 
+.image:hover {
+    cursor: pointer;
+}
+
+.image:hover .data {
+    box-shadow:inset 0px 0px 60px 8px #f72b3b;
+    color: #000; 
+}
+
 @keyframes color {
     0% {box-shadow: 0px -10px 10px 3px  rgb(221, 21, 240);}
     30% {box-shadow: 10px 0px 10px 3px rgb(18, 54, 218);}
@@ -180,3 +188,11 @@ transition-timing-function: ease-in-out;
     100% {top:0px;}
     }
 
+@media screen and (max-width:399px) {
+
+    img {
+        width: 315px;
+        height: 310px;
+    }
+
+}
